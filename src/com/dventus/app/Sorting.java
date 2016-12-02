@@ -47,6 +47,15 @@ public class Sorting {
 			
 			System.out.println(names.get(i));
 		}
+		
+		System.out.println("\nSearch for the name in the list...");
+		
+		String search = sc.next();
+		
+	    System.out.println("Search Results: " + searchName(names, search));
+		
+		
+		
 
 	}
 	/**
@@ -72,6 +81,21 @@ public class Sorting {
 			}
 			
 		});
+	}
+	
+	public static String searchName(List<String> names, String key)
+	{
+		String searchresult = "";
+		for(int i = 0; i<names.size();i++)
+		{
+			if(key.equals(names.get(i)))
+			{
+				searchresult = names.get(i);
+			}
+			
+		}
+		
+		return searchresult;
 	}
 
 }
