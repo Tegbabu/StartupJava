@@ -39,9 +39,14 @@ public class Sorting {
 			System.out.println(names.get(i));
 		}
 		
-		System.out.println("\nAfter Sorting the names...");
-		
 		sortNames(names);
+		
+		System.out.println("\nAfter Sorting the names...");
+			
+		for (int i = 0; i < names.size(); i++) {
+			
+			System.out.println(names.get(i));
+		}
 
 	}
 	/**
