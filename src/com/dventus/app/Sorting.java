@@ -23,7 +23,7 @@ public class Sorting {
 		
 		List<String> names = new ArrayList<String>();
 		
-		@SuppressWarnings("resource")
+	    System.out.println("Insert list of names..\n");
 		Scanner sc = new Scanner(System.in);
 		String name;
 		
